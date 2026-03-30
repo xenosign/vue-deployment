@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-app:latest
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/vue-app:latest
             sudo docker stop vue-container || true
-            sudo docker rm vue-container || true
-            sudo docker run -d --name vue-container -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/vue-app:latest
+            sudo docker rm vue-container || true  
+            sudo docker run -d --name vue-container --restart always -p 80:80 ${{ secrets.DOCKER_USERNAME }}/vue-app:latest
