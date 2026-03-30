@@ -37,5 +37,11 @@ jobs:
           script: |
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-app:latest
             sudo docker stop vue-container || true
-            sudo docker rm vue-container || true  
-            sudo docker run -d --name vue-container --restart always -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/vue-app:latest
+            sudo docker rm vue-container || true            
+            sudo docker run -d \
+              --name vue-container \
+              --restart always \
+              -p 80:80 -p 443:443 \
+              -v /home/ec2-user/default.conf:/etc/nginx/conf.d/default.conf:ro \
+              -v /etc/letsencrypt:/etc/letsencrypt:ro \
+              ${{ secrets.DOCKERHUB_USERNAME }}/vue-app:latest
