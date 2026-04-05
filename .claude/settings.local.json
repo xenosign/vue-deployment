@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(node -e \"const m = require\\('./node_modules/vue-gtag/dist/vue-gtag.js'\\); console.log\\(Object.keys\\(m\\)\\)\")"
+    ]
+  }
+}
