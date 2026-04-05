@@ -1,20 +1,13 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import VueGtag from 'vue-gtag';
-// import router from './router';
+import { createGtag } from 'vue-gtag';
 
 const app = createApp(App);
 
-app.use(VueGtag, {
-  config: { id: 'G-B05TZS38KE' },
+const gtag = createGtag({
+  tagId: 'G-B05TZS38KE',
 });
 
-// app.use(
-//   VueGtag,
-//   {
-//     config: { id: 'G-B05TZS38KE' },
-//   },
-//   router,
-// );
+app.use(gtag);
 
 app.mount('#app');
