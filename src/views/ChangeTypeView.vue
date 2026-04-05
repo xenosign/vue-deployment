@@ -27,6 +27,7 @@
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { event } from 'vue-gtag';
+import { clearStayTimeEntry } from '@/composables/useAbTest';
 
 const router = useRouter();
 const testName = 'main_test_v1';
@@ -46,6 +47,9 @@ const changeType = (type) => {
 
   // UUID(ab_test_user_id)는 건드리지 않고 그룹만 변경
   localStorage.setItem(`ab_test_${testName}`, type);
+
+  // 타입이 실제로 변경될 때만 체류 시간 측정 초기화
+  clearStayTimeEntry();
 
   event('ab_type_changed', {
     event_category: 'ab_test',

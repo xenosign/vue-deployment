@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import NavHeader from '@/components/NavHeader.vue';
 import { logEvent, setupStayTimeLog } from '@/composables/useAbTest';
@@ -7,6 +7,8 @@ import { logEvent, setupStayTimeLog } from '@/composables/useAbTest';
 const route = useRoute();
 const router = useRouter();
 const group = route.meta.group;
+
+let cleanupStayTime = null;
 
 onMounted(() => {
   const savedGroup = localStorage.getItem('ab_test_main_test_v1');
@@ -20,7 +22,11 @@ onMounted(() => {
   }
 
   logEvent('exposure', group);
-  setupStayTimeLog(group);
+  cleanupStayTime = setupStayTimeLog(group);
+});
+
+onUnmounted(() => {
+  cleanupStayTime?.();
 });
 </script>
 
