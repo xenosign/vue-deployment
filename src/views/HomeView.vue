@@ -2,8 +2,12 @@
   <div class="selection-screen">
     <h1>테스트 화면을 선택하세요</h1>
     <div class="button-group">
-      <button class="select-btn type-a" @click="selectType('A')">A 타입 선택</button>
-      <button class="select-btn type-b" @click="selectType('B')">B 타입 선택</button>
+      <button class="select-btn type-a" @click="selectType('A')">
+        A 타입 선택
+      </button>
+      <button class="select-btn type-b" @click="selectType('B')">
+        B 타입 선택
+      </button>
     </div>
   </div>
 </template>
@@ -59,7 +63,9 @@ const selectType = (type) => {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.1s, opacity 0.1s;
+  transition:
+    transform 0.1s,
+    opacity 0.1s;
 }
 
 .select-btn:hover {
