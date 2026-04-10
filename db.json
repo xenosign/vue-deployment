@@ -1,0 +1,328 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "type": "income",
+      "date": "2026-04-01",
+      "amount": 150000,
+      "category": "금융소득",
+      "memo": "미국 주식 배당금 입금"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "type": "expense",
+      "date": "2026-04-02",
+      "amount": 65000,
+      "category": "건강/피트니스",
+      "memo": "단백질 보충제 구매"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "type": "expense",
+      "date": "2026-04-04",
+      "amount": 8000,
+      "category": "식비",
+      "memo": "스터디 모임 커피"
+    },
+    {
+      "id": "4",
+      "userId": "4",
+      "type": "expense",
+      "date": "2026-04-05",
+      "amount": 35000,
+      "category": "교육",
+      "memo": "Core JavaScript 책 구매"
+    },
+    {
+      "userId": "1",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 5656,
+      "category": "문화생활",
+      "memo": "계획형 데이터 추가",
+      "id": "_KdLXNP"
+    },
+    {
+      "userId": "1",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 3434,
+      "category": "생활용품",
+      "memo": "",
+      "id": "kiyIkbU"
+    },
+    {
+      "userId": "1",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 34,
+      "category": "생활용품",
+      "memo": "",
+      "id": "pbschut"
+    },
+    {
+      "userId": "3",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 90000,
+      "category": "경조사/회비",
+      "memo": "",
+      "id": "pH-9d5u"
+    },
+    {
+      "userId": "3",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 4545,
+      "category": "문화생활",
+      "memo": "",
+      "id": "GgjgzVC"
+    },
+    {
+      "userId": "2",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 455555,
+      "category": "경조사/회비",
+      "memo": "",
+      "id": "X9e5Vvu"
+    },
+    {
+      "userId": "2",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 9000,
+      "category": "생활용품",
+      "memo": "",
+      "id": "DF7NBlR"
+    },
+    {
+      "userId": "jKQN6Cd",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 12312,
+      "category": "문화생활",
+      "memo": "12312",
+      "id": "CWVwHHl"
+    },
+    {
+      "userId": "1",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 1000000,
+      "category": "문화생활",
+      "memo": "",
+      "id": "gpIcSGR"
+    },
+    {
+      "userId": "1",
+      "type": "expense",
+      "date": "2026-04-09",
+      "amount": 3000,
+      "category": "경조사/회비",
+      "memo": "",
+      "id": "PcZ7y6f"
+    },
+    {
+      "userId": "2",
+      "type": "expense",
+      "date": "2026-04-10",
+      "amount": 111111111,
+      "category": "생활용품",
+      "memo": "test1111111",
+      "id": "90PY4dK"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "type": "income",
+      "name": "월급"
+    },
+    {
+      "id": "2",
+      "type": "income",
+      "name": "부수입"
+    },
+    {
+      "id": "3",
+      "type": "income",
+      "name": "용돈"
+    },
+    {
+      "id": "4",
+      "type": "income",
+      "name": "상여"
+    },
+    {
+      "id": "5",
+      "type": "income",
+      "name": "금융소득"
+    },
+    {
+      "id": "6",
+      "type": "income",
+      "name": "기타"
+    },
+    {
+      "id": "7",
+      "type": "expense",
+      "name": "식비"
+    },
+    {
+      "id": "8",
+      "type": "expense",
+      "name": "문화생활"
+    },
+    {
+      "id": "9",
+      "type": "expense",
+      "name": "생활용품"
+    },
+    {
+      "id": "10",
+      "type": "expense",
+      "name": "경조사/회비"
+    },
+    {
+      "id": "11",
+      "type": "expense",
+      "name": "주거/통신"
+    },
+    {
+      "id": "12",
+      "type": "expense",
+      "name": "교통/차량"
+    },
+    {
+      "id": "13",
+      "type": "expense",
+      "name": "교육"
+    },
+    {
+      "id": "14",
+      "type": "expense",
+      "name": "건강/피트니스"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "loginId": "plan_lee",
+      "username": "이계획",
+      "password": "demo1111",
+      "totalAmount": 3200000,
+      "spendingType": "사회형",
+      "expectedIncome": 3200000,
+      "monthlyBudget": null,
+      "fixedItems": [
+        {
+          "id": "1",
+          "name": "주거비",
+          "amount": 500000
+        },
+        {
+          "id": "2",
+          "name": "교통비",
+          "amount": 100000
+        },
+        {
+          "id": "3",
+          "name": "통신비",
+          "amount": 50000
+        },
+        {
+          "id": "1775713396298",
+          "name": "test",
+          "amount": 1234
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "loginId": "flex_park",
+      "username": "박플렉스",
+      "password": "demo2222",
+      "totalAmount": 1800000,
+      "spendingType": "플렉스형",
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "fixedItems": []
+    },
+    {
+      "id": "3",
+      "loginId": "social_choi",
+      "username": "최사교",
+      "password": "demo3333",
+      "totalAmount": 2100000,
+      "spendingType": "계획형",
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "fixedItems": []
+    },
+    {
+      "id": "4",
+      "loginId": "drip_jung",
+      "username": "정가랑비",
+      "password": "demo4444",
+      "totalAmount": 950000,
+      "spendingType": "보슬비형",
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "fixedItems": []
+    },
+    {
+      "totalAmount": 0,
+      "expectedIncome": 12312,
+      "monthlyBudget": 11231,
+      "loginId": "12",
+      "password": "12",
+      "username": "12",
+      "spendingType": "계획형",
+      "fixedItems": [
+        {
+          "id": "1775712635041",
+          "name": "123",
+          "amount": 12312
+        }
+      ],
+      "id": "jKQN6Cd"
+    },
+    {
+      "totalAmount": 0,
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "loginId": "123",
+      "password": "123",
+      "username": "1233",
+      "spendingType": "플렉스형",
+      "fixedItems": [],
+      "id": "p_kmuHJ"
+    },
+    {
+      "totalAmount": 0,
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "fixedItems": [],
+      "loginId": "00",
+      "password": "00",
+      "username": "00",
+      "spendingType": "플렉스형",
+      "id": "4_XgQ5q"
+    },
+    {
+      "totalAmount": 0,
+      "expectedIncome": null,
+      "monthlyBudget": null,
+      "fixedItems": [],
+      "loginId": "1234",
+      "password": "1234",
+      "username": "1234",
+      "spendingType": null,
+      "id": "jIorRpy"
+    }
+  ]
+}
